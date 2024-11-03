@@ -1,24 +1,86 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 export const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+  const subMenuRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const toggleSubMenu = () => {
+    setIsSubMenuOpen(!isSubMenuOpen);
+  };
+
+  const closeSubMenu = () => {
+    setIsSubMenuOpen(false);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        subMenuRef.current &&
+        !subMenuRef.current.contains(event.target as Node)
+      ) {
+        closeSubMenu();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleLinkClick = () => {
+    closeSubMenu();
+  };
+
   return (
     <nav className="bg-[#f0f4c3] p-4 fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-[#004d40] font-bold text-xl">Small Room Soul</div>
+        <a href="/" className="text-[#004d40] font-bold text-xl">
+          Small Room Soul
+        </a>
         <div className="hidden md:flex space-x-6">
           <a href="#" className="text-[#004d40] hover:text-gray-300">
             Home
           </a>
-          <a href="#" className="text-[#004d40] hover:text-gray-300">
-            About
-          </a>
+          <div ref={subMenuRef} className="relative group">
+            <button
+              onClick={toggleSubMenu}
+              className="text-[#004d40] hover:text-gray-300 focus:outline-none"
+            >
+              About
+            </button>
+            {isSubMenuOpen && (
+              <div className="absolute left-0 mt-2 w-48 bg-[#f0f4c3] border border-gray-200 rounded-md shadow-lg transition-transform duration-300 transform opacity-100 translate-y-0">
+                <a
+                  href="#"
+                  onClick={handleLinkClick}
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Our Story
+                </a>
+                <a
+                  href="#"
+                  onClick={handleLinkClick}
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Team
+                </a>
+                <a
+                  href="#"
+                  onClick={handleLinkClick}
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Careers
+                </a>
+              </div>
+            )}
+          </div>
           <a href="#" className="text-[#004d40] hover:text-gray-300">
             Gallery
           </a>
@@ -57,9 +119,39 @@ export const Nav = () => {
         <a href="#" className="block text-[#004d40] px-2 py-2">
           Home
         </a>
-        <a href="#" className="block text-[#004d40] px-2 py-2">
-          About
-        </a>
+        <div ref={subMenuRef} className="relative">
+          <button
+            onClick={toggleSubMenu}
+            className="block text-[#004d40] px-2 py-2 focus:outline-none"
+          >
+            About
+          </button>
+          {isSubMenuOpen && (
+            <div className="pl-4 transition-all duration-300 ease-in-out transform opacity-100">
+              <a
+                href="#"
+                onClick={handleLinkClick}
+                className="block text-[#004d40] px-2 py-2"
+              >
+                Our Story
+              </a>
+              <a
+                href="#"
+                onClick={handleLinkClick}
+                className="block text-[#004d40] px-2 py-2"
+              >
+                Team
+              </a>
+              <a
+                href="#"
+                onClick={handleLinkClick}
+                className="block text-[#004d40] px-2 py-2"
+              >
+                Careers
+              </a>
+            </div>
+          )}
+        </div>
         <a href="#" className="block text-[#004d40] px-2 py-2">
           Gallery
         </a>

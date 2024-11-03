@@ -6,13 +6,22 @@ const About = () => {
     <section className="my-8 text-center">
       <h2 className="text-3xl font-bold">Small Room Soul</h2>
       <p className="mt-4 text-gray-600">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        Small Room Soul adalah komunitas yang terbentuk di jantung kota Jakarta,
+        tepatnya di Kemayoran, dengan tujuan memberikan ruang bagi kaum muda
+        untuk berkarya dan bergerak melalui kreativitas. Komunitas ini berfokus
+        pada pengembangan aksi-aksi yang mencakup seni,musik, budaya, sosial,
+        kepemudaan, dan solidaritas. Didorong oleh keprihatinan terhadap isu-isu
+        sosial terkini seperti masalah generasi muda, lingkungan, serta
+        pelestarian seni dan budaya, Small Room Soul hadir untuk menyuarakan
+        perubahan dan mendorong kesadaran generasi muda khususnya di wilayah
+        Kemayoran.
+      </p>
+      <p className="mt-4 text-gray-600">
+        Dengan semangat kolaborasi dan kepedulian, Small Room Soul merangkul
+        berbagai program dan kegiatan yang mengedepankan keterlibatan aktif kaum
+        muda. Setiap program yang dijalankan bukan hanya sekadar acara, tetapi
+        sebuah gerakan yang bertujuan membangun kesadaran, memperkuat komunitas,
+        dan menginspirasi tindakan nyata di tengah masyarakat.
       </p>
     </section>
   );

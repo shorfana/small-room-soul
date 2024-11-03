@@ -16,6 +16,8 @@ import Gallery from "./components/Gallery";
 import Testimonials from "./components/Testimonials";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
+import Product from "./components/Product";
+import Lates_Event from "./components/LatestEvent";
 
 interface Props {
   readonly children: ReactNode;
@@ -34,11 +36,11 @@ export default function RootLayout({ children }: Props) {
               <Carousel />
               <div className="container mx-auto px-4">
                 <About />
-                <EventSchedule />
-                <BandProfile />
-                <Gallery />
+                <Product />
+                {/* <Gallery /> */}
+                <Lates_Event />
                 <Testimonials />
-                <Newsletter />
+                {/* <Newsletter /> */}
               </div>
             </div>
             <Footer />

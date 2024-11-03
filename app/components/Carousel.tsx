@@ -6,9 +6,9 @@ const Carousel = () => {
 
   // List gambar menggunakan URL
   const images = [
-    "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1519681393784-d120267933ba?fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?fit=crop&w=1200&q=80",
+    "https://i.ibb.co.com/6Fxdp46/Whats-App-Image-2024-11-03-at-14-58-27-f5e4a155.jpg",
+    "https://i.ibb.co.com/nR6kGYs/Whats-App-Image-2024-11-03-at-14-58-29-9ec86f94.jpg",
+    "https://i.ibb.co.com/zGrtr17/Whats-App-Image-2024-11-03-at-14-58-28-db8c4ea0.jpg",
   ];
 
   const handleNext = () => {
@@ -43,8 +43,8 @@ const Carousel = () => {
               className="w-full h-full object-cover"
               alt={`Slide ${index + 1}`}
             />
-            <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
-              <h2 className="text-3xl font-bold">OUR EVENT</h2>
+            <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-20">
+              <h2 className="text-3xl font-bold">OUR NEXT EVENT</h2>
             </div>
           </div>
         ))}

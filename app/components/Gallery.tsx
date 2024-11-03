@@ -5,12 +5,12 @@ import React, { useState } from "react";
 const images = [
   {
     id: 1,
-    src: "https://instagram.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/450817705_18358354636100403_988280385214615679_n.jpg?stp=dst-jpg_e35_p480x480&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fcgk12-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=jg-_VXdHchMQ7kNvgG-BNkK&_nc_gid=67059cae2727431b86036e8a4e52a28e&edm=ALQROFkAAAAA&ccb=7-5&ig_cache_key=MzQxMDE4Mjk3NDY2MTY3ODMzNw%3D%3D.3-ccb7-5&oh=00_AYBxFo4sCuAdjEaBwd2QioY4n8WCIEFzB5NA0DRN_G7npA&oe=67080AEF&_nc_sid=fc8dfb", // Image 1
+    src: "https://i.ibb.co.com/qBJd5ym/medikiples-page-0001.jpg", // Image 1
     alt: "Event 1",
   },
   {
     id: 2,
-    src: "https://scontent.cdninstagram.com/v/t39.30808-6/450780917_18358060213100403_2731907229778130458_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=103&_nc_ohc=1usVNplXG4sQ7kNvgGPbXme&_nc_gid=4ed7eeb372cf43218d3eac287ea714aa&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzQwODcwMTY1OTM5OTM3ODM1Ng%3D%3D.3-ccb7-5&oh=00_AYBvgGX1fMrBhpv-By97QK24JcMEYgdQOBN22StimPRFjw&oe=67082E86&_nc_sid=10d13b", // Image 2
+    src: "https://i.ibb.co.com/qn3Yqss/Whats-App-Image-2024-11-03-at-16-12-10-c44d5853.jpg", // Image 2
     alt: "Event 2",
   },
   {
