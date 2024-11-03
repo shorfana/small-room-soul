@@ -25,29 +25,9 @@ interface Props {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <StoreProvider>
-      <html lang="en">
-        <body>
-          <Nav />
-          <section className="pt-16">
-            {" "}
-            {/* Adjust this padding as necessary */}
-            <div className="container mx-auto px-4">
-              <Carousel />
-              <div className="container mx-auto px-4">
-                <About />
-                <Product />
-                {/* <Gallery /> */}
-                <Lates_Event />
-                <Testimonials />
-                {/* <Newsletter /> */}
-              </div>
-            </div>
-            <Footer />
-          </section>
-        </body>
-      </html>
-    </StoreProvider>
+    <html lang="en">
+      <body>{children}</body>
+    </html>
     // <StoreProvider>
     //   <html lang="en">
     //     <body>
