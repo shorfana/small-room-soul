@@ -50,9 +50,9 @@ const HomePage: React.FC = () => {
       {/* Title Section */}
       <div className="flex-1 flex items-center justify-center bg-white relative">
         <img
-          src="https://i.ibb.co/qBJd5ym/medikiples-page-0001.jpg" // URL gambar Anda
+          src="https://i.ibb.co.com/qBJd5ym/medikiples-page-0001.jpg" // URL gambar Anda
           alt="Medikiplees Logo"
-          className="w-full h-full object-cover" // Membuat gambar memenuhi seluruh kontainer
+          className="w-full h-auto object-cover" // Membuat gambar memenuhi lebar kontainer dengan tinggi otomatis
         />
       </div>
 
@@ -69,24 +69,25 @@ const HomePage: React.FC = () => {
         ))}
       </div>
 
-{isModalOpen && (
-  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-    <div className="bg-white p-4 rounded-lg shadow-lg max-w-lg w-full mx-4 max-h-[80vh] overflow-y-auto">
-      <h2 className="text-2xl font-bold mb-4">Lirik Lagu</h2>
-      <div className="text-lg mb-4 space-y-2">
-        {currentLyrics.split("\n").map((line, index) => (
-          <p key={index}>{line}</p>
-        ))}
-      </div>
-      <button
-        onClick={closeModal}
-        className="px-4 py-2 bg-[#ff9b7c] text-white rounded-md hover:bg-[#ff8b6c]"
-      >
-        Close
-      </button>
-    </div>
-  </div>
-)}
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white p-4 rounded-lg shadow-lg max-w-lg w-full mx-4 max-h-[80vh] overflow-y-auto">
+            <h2 className="text-2xl font-bold mb-4">Lirik Lagu</h2>
+            <div className="text-lg mb-4 space-y-2">
+              {currentLyrics.split("\n").map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+            </div>
+            <button
+              onClick={closeModal}
+              className="px-4 py-2 bg-[#ff9b7c] text-white rounded-md hover:bg-[#ff8b6c]"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
