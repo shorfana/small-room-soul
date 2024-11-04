@@ -8,65 +8,12 @@ const HomePage: React.FC = () => {
     {
       title: "U DOLL",
       lyrics:
-        "Lewat judi ngarep bisa beli lamborghini
-
-Dalam hidup kita perlu tuk mencari uang 
-Tuk penuhi kebutuhan di zaman yang 
-edan
-Dalam hidup kita perlu tuk mencari uang
-Tuk lengkapi kebutuhan sandang, pangan, 
-
-Tapi temanku, ingatlah bahwa
-Uang bukan segalanya
-Tapi segalanya itu pasti perlu uang juga ..
-          
-Zaman sekarang bisa cari uang lewat 
-permainan
-Bisa jadi jalan pintas tuk dapatkan 
-kesenangan
-
-Reff :
-Kuota dan pulsa
-Menjelma menjadi senjata ga peduli
-Jangan ngarep lewat judi bisa beli 
-lamborghini lagi  ......
-
-Reff :
-Kuota dan Pulsa
-Menjelma menjadi senjata ga peduli
-Jangan ngarep lewat judi bisa beli 
-lamborghini lagi  ......",
+        "Lewat judi ngarep bisa beli lamborghini\n\nDalam hidup kita perlu tuk mencari uang\nTuk penuhi kebutuhan di zaman yang edan\nDalam hidup kita perlu tuk mencari uang\nTuk lengkapi kebutuhan sandang, pangan,\n\nTapi temanku, ingatlah bahwa\nUang bukan segalanya\nTapi segalanya itu pasti perlu uang juga ..\n\nZaman sekarang bisa cari uang lewat permainan\nBisa jadi jalan pintas tuk dapatkan kesenangan\n\nReff:\nKuota dan pulsa\nMenjelma menjadi senjata ga peduli\nJangan ngarep lewat judi bisa beli lamborghini lagi ......\n\nReff:\nKuota dan Pulsa\nMenjelma menjadi senjata ga peduli\nJangan ngarep lewat judi bisa beli lamborghini lagi ......  ",
     },
     {
-      title: "PERCAYA G PERCAYA",
+      title: "PERCAYA GA PERCAYA",
       lyrics:
-        "Kau telah berjanji untuk sehidup semati
-Maka tolong jangan ingkari
-Kau dan aku telah terikat janji
-                   
-Kau telah berjanji untuk tidak mengingkari
-Maka tolong jangan berlari
-Kau dan aku telah terikat janji
-
-Reff:
-Aku percaya padamu, ku harap kau tahu itu
-Maka jangan sekalipun kau berfikir tuk ingkari karena
-                            
-Kau telah berjanji untuk sehidup semati
-Maka tolong jangan ingkari
-Kau dan aku telah terikat janji
-
-Reff :                                       
-Semua sumpah juga janjimu ku percaya 
-semua itu
-Tapi yang kau berikan
-Kau ingkari semua itu
-
-Reff :                                         
-Semua sumpah juga janjimu ku percaya 
-semua itu
-Tapi yang kau berikan
-Kau ingkari semua itu",
+        "Kau telah berjanji untuk sehidup semati\nMaka tolong jangan ingkari\nKau dan aku telah terikat janji\n\nKau telah berjanji untuk tidak mengingkari\nMaka tolong jangan berlari\nKau dan aku telah terikat janji\n\nReff:\nAku percaya padamu, ku harap kau tahu itu\nMaka jangan sekalipun kau berfikir tuk ingkari karena\n\nKau telah berjanji untuk sehidup semati\nMaka tolong jangan ingkari\nKau dan aku telah terikat janji\n\nReff:\nSemua sumpah juga janjimu ku percaya semua itu\nTapi yang kau berikan\nKau ingkari semua itu\n\nReff:\nSemua sumpah juga janjimu ku percaya semua itu\nTapi yang kau berikan\nKau ingkari semua itu  ",
     },
     {
       title: "judul 3",
