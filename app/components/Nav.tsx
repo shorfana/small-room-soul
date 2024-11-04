@@ -3,28 +3,29 @@ import React, { useState, useEffect, useRef } from "react";
 
 export const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
-  const subMenuRef = useRef<HTMLDivElement>(null);
+  const [activeSubMenu, setActiveSubMenu] = useState<null | "about" | "produk">(
+    null
+  );
+  const subMenuRefAbout = useRef<HTMLDivElement>(null);
+  const subMenuRefProduk = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleSubMenu = () => {
-    setIsSubMenuOpen(!isSubMenuOpen);
-  };
-
-  const closeSubMenu = () => {
-    setIsSubMenuOpen(false);
+  const toggleSubMenu = (menu: "about" | "produk") => {
+    setActiveSubMenu(activeSubMenu === menu ? null : menu); // Toggle submenus
   };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
-        subMenuRef.current &&
-        !subMenuRef.current.contains(event.target as Node)
+        subMenuRefAbout.current &&
+        !subMenuRefAbout.current.contains(event.target as Node) &&
+        subMenuRefProduk.current &&
+        !subMenuRefProduk.current.contains(event.target as Node)
       ) {
-        closeSubMenu();
+        setActiveSubMenu(null); // Close all submenus on outside click
       }
     };
 
@@ -34,10 +35,6 @@ export const Nav = () => {
     };
   }, []);
 
-  const handleLinkClick = () => {
-    closeSubMenu();
-  };
-
   return (
     <nav className="bg-[#f0f4c3] p-4 fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
@@ -45,47 +42,77 @@ export const Nav = () => {
           Small Room Soul
         </a>
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="text-[#004d40] hover:text-gray-300">
-            Home
+          <a href="/" className="text-[#004d40] hover:text-gray-300">
+            Beranda
           </a>
-          <div ref={subMenuRef} className="relative group">
+          <div ref={subMenuRefAbout} className="relative">
             <button
-              onClick={toggleSubMenu}
+              onClick={() => toggleSubMenu("about")}
               className="text-[#004d40] hover:text-gray-300 focus:outline-none"
             >
-              About
+              Tentang Kami
             </button>
-            {isSubMenuOpen && (
-              <div className="absolute left-0 mt-2 w-48 bg-[#f0f4c3] border border-gray-200 rounded-md shadow-lg transition-transform duration-300 transform opacity-100 translate-y-0">
+            {activeSubMenu === "about" && (
+              <div className="absolute left-0 mt-2 w-48 bg-[#f0f4c3] border border-gray-200 rounded-md shadow-lg">
                 <a
-                  href="#"
-                  onClick={handleLinkClick}
+                  href="/about/visimisi"
                   className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
                 >
-                  Our Story
+                  Visi & Misi
+                </a>
+                <a
+                  href="/about/tim"
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Tim
+                </a>
+                <a
+                  href="/about/kontak"
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Kontak
                 </a>
                 <a
                   href="#"
-                  onClick={handleLinkClick}
                   className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
                 >
-                  Team
+                  Movement
                 </a>
                 <a
                   href="#"
-                  onClick={handleLinkClick}
                   className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
                 >
-                  Careers
+                  Info Kolaborasi
                 </a>
               </div>
             )}
           </div>
-          <a href="#" className="text-[#004d40] hover:text-gray-300">
-            Gallery
-          </a>
-          <a href="#" className="text-[#004d40] hover:text-gray-300">
-            Contact
+          <div ref={subMenuRefProduk} className="relative">
+            <button
+              onClick={() => toggleSubMenu("produk")}
+              className="text-[#004d40] hover:text-gray-300 focus:outline-none"
+            >
+              Produk
+            </button>
+            {activeSubMenu === "produk" && (
+              <div className="absolute right-0 mt-2 w-48 bg-[#f0f4c3] border border-gray-200 rounded-md shadow-lg">
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Band
+                </a>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Merchandise
+                </a>
+              </div>
+            )}
+          </div>
+          <a href="/auth/login" className="text-[#004d40] hover:text-gray-300">
+            Login
           </a>
         </div>
         <div className="md:hidden">
@@ -111,54 +138,86 @@ export const Nav = () => {
           </button>
         </div>
       </div>
-      <div
-        className={`md:hidden transition-all duration-300 ease-in-out transform ${
-          isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-        } overflow-hidden`}
-      >
-        <a href="#" className="block text-[#004d40] px-2 py-2">
-          Home
-        </a>
-        <div ref={subMenuRef} className="relative">
-          <button
-            onClick={toggleSubMenu}
-            className="block text-[#004d40] px-2 py-2 focus:outline-none"
+      {/* Mobile menu */}
+      {isOpen && (
+        <div className="md:hidden mt-4 space-y-4">
+          <a href="/" className="block text-[#004d40] hover:text-gray-300">
+            Beranda
+          </a>
+          <div ref={subMenuRefAbout} className="relative">
+            <button
+              onClick={() => toggleSubMenu("about")}
+              className="block text-[#004d40] hover:text-gray-300 focus:outline-none"
+            >
+              Tentang Kami
+            </button>
+            {activeSubMenu === "about" && (
+              <div className="mt-2 w-full bg-[#f0f4c3] rounded-md">
+                <a
+                  href="/about/visimisi"
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Visi & Misi
+                </a>
+                <a
+                  href="/about/tim"
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Tim
+                </a>
+                <a
+                  href="/about/kontak"
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Kontak
+                </a>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Movement
+                </a>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Info Kolaborasi
+                </a>
+              </div>
+            )}
+          </div>
+          <div ref={subMenuRefProduk} className="relative">
+            <button
+              onClick={() => toggleSubMenu("produk")}
+              className="block text-[#004d40] hover:text-gray-300 focus:outline-none"
+            >
+              Produk
+            </button>
+            {activeSubMenu === "produk" && (
+              <div className="mt-2 w-full bg-[#f0f4c3] rounded-md">
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Band
+                </a>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
+                >
+                  Merchandise
+                </a>
+              </div>
+            )}
+          </div>
+          <a
+            href="/auth/login"
+            className="block text-[#004d40] hover:text-gray-300"
           >
-            About
-          </button>
-          {isSubMenuOpen && (
-            <div className="pl-4 transition-all duration-300 ease-in-out transform opacity-100">
-              <a
-                href="#"
-                onClick={handleLinkClick}
-                className="block text-[#004d40] px-2 py-2"
-              >
-                Our Story
-              </a>
-              <a
-                href="#"
-                onClick={handleLinkClick}
-                className="block text-[#004d40] px-2 py-2"
-              >
-                Team
-              </a>
-              <a
-                href="#"
-                onClick={handleLinkClick}
-                className="block text-[#004d40] px-2 py-2"
-              >
-                Careers
-              </a>
-            </div>
-          )}
+            Login
+          </a>
         </div>
-        <a href="#" className="block text-[#004d40] px-2 py-2">
-          Gallery
-        </a>
-        <a href="#" className="block text-[#004d40] px-2 py-2">
-          Contact
-        </a>
-      </div>
+      )}
     </nav>
   );
 };

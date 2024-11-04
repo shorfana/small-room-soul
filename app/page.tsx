@@ -3,7 +3,6 @@ import { Nav } from "./components/Nav";
 
 import Carousel from "./components/Carousel";
 import About from "./components/About";
-import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Product from "./components/Product";
 import Lates_Event from "./components/LatestEvent";
@@ -13,17 +12,12 @@ export default function IndexPage() {
     <div>
       <Nav />
       <section className="pt-16">
-        {" "}
-        {/* Adjust this padding as necessary */}
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-6 max-w-7xl">
           <Carousel />
-          <div className="container mx-auto px-4">
+          <div className="mx-auto px-4">
             <About />
             <Product />
-            {/* <Gallery /> */}
             <Lates_Event />
-            <Testimonials />
-            {/* <Newsletter /> */}
           </div>
         </div>
         <Footer />

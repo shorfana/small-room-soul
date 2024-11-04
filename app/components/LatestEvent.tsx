@@ -15,27 +15,27 @@ const events: Event[] = [
     title: "Annual Music Fest",
     description: "Join us for an unforgettable night of music and fun.",
     date: "2024-12-25",
-    image: "https://example.com/event1.jpg",
+    image: "https://i.ibb.co.com/mXYL47F/logo-removebg-preview.png",
   },
   {
     id: 2,
     title: "Art Exhibition",
     description: "Explore the latest trends in contemporary art.",
     date: "2024-11-15",
-    image: "https://example.com/event2.jpg",
+    image: "https://i.ibb.co.com/mXYL47F/logo-removebg-preview.png",
   },
   {
     id: 3,
     title: "Tech Conference",
     description: "Discover the future of technology with industry leaders.",
     date: "2024-10-05",
-    image: "https://example.com/event3.jpg",
+    image: "https://i.ibb.co.com/mXYL47F/logo-removebg-preview.png",
   },
 ];
 
 const LatestEvents: React.FC = () => {
   return (
-    <div className="bg-gray-100 py-12">
+    <div className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
           Latest Events
