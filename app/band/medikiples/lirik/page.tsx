@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
       {/* Title Section */}
       <div className="flex-1 flex items-center justify-center bg-white">
         <Image
-            src="/medikiplees-logo.png" // sesuaikan dengan path gambar di folder public
+            src="https://i.ibb.co.com/qBJd5ym/medikiples-page-0001.jpg" // sesuaikan dengan path gambar di folder public
             alt="Medikiplees Logo"
             width={200} // sesuaikan ukuran lebar gambar
             height={200} // sesuaikan ukuran tinggi gambar
