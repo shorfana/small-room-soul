@@ -38,9 +38,35 @@ Jangan ngarep lewat judi bisa beli
 lamborghini lagi  ......",
     },
     {
-      title: "judul 2",
+      title: "PERCAYA G PERCAYA",
       lyrics:
-        "Mimpi buruk ini terus menghantui malam-malamku. Setiap kali aku memejamkan mata, bayangan kelam itu kembali muncul, menggantikan kedamaian yang seharusnya kutemukan dalam tidur. Seperti labirin tanpa akhir, aku terjebak, mencari jalan keluar tapi selalu berputar-putar di tempat yang sama. Ada perasaan takut yang tidak bisa kujelaskan, seperti ada sesuatu yang gelap, sesuatu yang jahat, yang mengintai dari bayangan. Aku ingin bangun, tapi tubuhku terasa berat, seolah terikat oleh kekuatan yang tak terlihat. Keringat dingin mengalir di pelipisku, dan napasku semakin berat. Aku mencoba berteriak, tapi suara ku seolah tertelan oleh kegelapan. Mimpi ini terasa begitu nyata, begitu menakutkan, hingga aku mulai meragukan apa yang sebenarnya nyata dan apa yang hanya bayangan dalam pikiranku. Aku berharap ini hanya sementara, bahwa suatu hari aku akan bebas dari mimpi buruk ini.",
+        "Kau telah berjanji untuk sehidup semati
+Maka tolong jangan ingkari
+Kau dan aku telah terikat janji
+                   
+Kau telah berjanji untuk tidak mengingkari
+Maka tolong jangan berlari
+Kau dan aku telah terikat janji
+
+Reff:
+Aku percaya padamu, ku harap kau tahu itu
+Maka jangan sekalipun kau berfikir tuk ingkari karena
+                            
+Kau telah berjanji untuk sehidup semati
+Maka tolong jangan ingkari
+Kau dan aku telah terikat janji
+
+Reff :                                       
+Semua sumpah juga janjimu ku percaya 
+semua itu
+Tapi yang kau berikan
+Kau ingkari semua itu
+
+Reff :                                         
+Semua sumpah juga janjimu ku percaya 
+semua itu
+Tapi yang kau berikan
+Kau ingkari semua itu",
     },
     {
       title: "judul 3",
