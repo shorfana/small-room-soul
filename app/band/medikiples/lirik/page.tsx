@@ -2,6 +2,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const HomePage: React.FC = () => {
   const titles = [
@@ -49,9 +50,13 @@ const HomePage: React.FC = () => {
     <div className="flex flex-col md:flex-row h-screen">
       {/* Title Section */}
       <div className="flex-1 flex items-center justify-center bg-white">
-        <h1 className="text-5xl font-bold text-black transform md:rotate-[-15deg]">
-          MEDIKIPLESS
-        </h1>
+        <Image
+            src="/medikiplees-logo.png" // sesuaikan dengan path gambar di folder public
+            alt="Medikiplees Logo"
+            width={200} // sesuaikan ukuran lebar gambar
+            height={200} // sesuaikan ukuran tinggi gambar
+            className="transform md:rotate-[-15deg]"
+        />
       </div>
 
       {/* Menu Section */}
