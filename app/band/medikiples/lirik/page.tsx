@@ -67,21 +67,24 @@ const HomePage: React.FC = () => {
         ))}
       </div>
 
-      {/* Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-4 rounded-lg shadow-lg max-w-lg w-full mx-4 max-h-[80vh] overflow-y-auto">
-            <h2 className="text-2xl font-bold mb-4">Lirik Lagu</h2>
-            <p className="text-lg mb-4">{currentLyrics}</p>
-            <button
-              onClick={closeModal}
-              className="px-4 py-2 bg-[#ff9b7c] text-white rounded-md hover:bg-[#ff8b6c]"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
+{isModalOpen && (
+  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div className="bg-white p-4 rounded-lg shadow-lg max-w-lg w-full mx-4 max-h-[80vh] overflow-y-auto">
+      <h2 className="text-2xl font-bold mb-4">Lirik Lagu</h2>
+      <div className="text-lg mb-4 space-y-2">
+        {currentLyrics.split("\n").map((line, index) => (
+          <p key={index}>{line}</p>
+        ))}
+      </div>
+      <button
+        onClick={closeModal}
+        className="px-4 py-2 bg-[#ff9b7c] text-white rounded-md hover:bg-[#ff8b6c]"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+)}
     </div>
   );
 };
