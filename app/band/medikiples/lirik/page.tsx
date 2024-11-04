@@ -2,7 +2,6 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 const HomePage: React.FC = () => {
   const titles = [
@@ -49,13 +48,11 @@ const HomePage: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row h-screen">
       {/* Title Section */}
-      <div className="flex-1 flex items-center justify-center bg-white">
-        <Image
-            src="https://i.ibb.co.com/qBJd5ym/medikiples-page-0001.jpg" // sesuaikan dengan path gambar di folder public
-            alt="Medikiplees Logo"
-            width={200} // sesuaikan ukuran lebar gambar
-            height={200} // sesuaikan ukuran tinggi gambar
-            className="transform md:rotate-[-15deg]"
+      <div className="flex-1 flex items-center justify-center bg-white relative">
+        <img
+          src="https://i.ibb.co/qBJd5ym/medikiples-page-0001.jpg" // URL gambar Anda
+          alt="Medikiplees Logo"
+          className="w-full h-full object-cover" // Membuat gambar memenuhi seluruh kontainer
         />
       </div>
 
