@@ -6,9 +6,36 @@ import Link from "next/link";
 const HomePage: React.FC = () => {
   const titles = [
     {
-      title: "judul 1",
+      title: "U DOLL",
       lyrics:
-        "Kecewa adalah perasaan yang sulit dijelaskan dengan kata-kata. Dalam hati yang terdalam, aku merasa hilang arah, terhanyut dalam gelombang emosi yang sulit diungkapkan. Rasanya seperti berjalan di tengah hujan yang deras, tanpa tempat untuk berlindung, hanya aku dan kegelapan. Setiap langkah terasa berat, dan setiap nafas seolah mengingatkan aku akan rasa sakit ini. Mungkin ini hanya mimpi buruk yang sedang kulalui, tapi kenapa rasanya begitu nyata? Aku ingin berteriak, ingin melepaskan semua ini, tapi suara ku seolah tenggelam dalam keheningan. Aku mencoba mencari jawaban, mencari alasan di balik semua ini. Apakah aku salah? Apakah aku terlalu berharap? Apakah aku terlalu percaya? Semua pertanyaan itu berputar dalam pikiranku, tapi jawaban tak kunjung datang. Yang tersisa hanya rasa kecewa yang menggantung di udara. Mungkin, suatu saat nanti aku akan mengerti. Mungkin, suatu saat nanti rasa ini akan hilang. Tapi untuk saat ini, aku hanya bisa merasakan kecewa yang mendalam, dan berharap suatu hari nanti, semuanya akan baik-baik saja.",
+        "Lewat judi ngarep bisa beli lamborghini
+
+Dalam hidup kita perlu tuk mencari uang 
+Tuk penuhi kebutuhan di zaman yang 
+edan
+Dalam hidup kita perlu tuk mencari uang
+Tuk lengkapi kebutuhan sandang, pangan, 
+
+Tapi temanku, ingatlah bahwa
+Uang bukan segalanya
+Tapi segalanya itu pasti perlu uang juga ..
+          
+Zaman sekarang bisa cari uang lewat 
+permainan
+Bisa jadi jalan pintas tuk dapatkan 
+kesenangan
+
+Reff :
+Kuota dan pulsa
+Menjelma menjadi senjata ga peduli
+Jangan ngarep lewat judi bisa beli 
+lamborghini lagi  ......
+
+Reff :
+Kuota dan Pulsa
+Menjelma menjadi senjata ga peduli
+Jangan ngarep lewat judi bisa beli 
+lamborghini lagi  ......",
     },
     {
       title: "judul 2",
