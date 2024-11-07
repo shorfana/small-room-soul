@@ -73,13 +73,13 @@ export const Nav = () => {
                   Kontak
                 </a>
                 <a
-                  href="#"
+                  href="/about/movement"
                   className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
                 >
                   Movement
                 </a>
                 <a
-                  href="#"
+                  href="/about/info_kolaborasi"
                   className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
                 >
                   Info Kolaborasi
@@ -97,13 +97,13 @@ export const Nav = () => {
             {activeSubMenu === "produk" && (
               <div className="absolute right-0 mt-2 w-48 bg-[#f0f4c3] border border-gray-200 rounded-md shadow-lg">
                 <a
-                  href="#"
+                  href="/product/band"
                   className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
                 >
                   Band
                 </a>
                 <a
-                  href="#"
+                  href="/product/merchandise"
                   className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
                 >
                   Merchandise
@@ -111,6 +111,9 @@ export const Nav = () => {
               </div>
             )}
           </div>
+          <a href="/events" className="text-[#004d40] hover:text-gray-300">
+            Events
+          </a>
           <a href="/auth/login" className="text-[#004d40] hover:text-gray-300">
             Login
           </a>
@@ -172,13 +175,13 @@ export const Nav = () => {
                   Kontak
                 </a>
                 <a
-                  href="#"
+                  href="/about/movement"
                   className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
                 >
                   Movement
                 </a>
                 <a
-                  href="#"
+                  href="/about/info_kolaborasi"
                   className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
                 >
                   Info Kolaborasi
@@ -196,13 +199,13 @@ export const Nav = () => {
             {activeSubMenu === "produk" && (
               <div className="mt-2 w-full bg-[#f0f4c3] rounded-md">
                 <a
-                  href="#"
+                  href="/product/band"
                   className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
                 >
                   Band
                 </a>
                 <a
-                  href="#"
+                  href="/product/merchandise"
                   className="block px-4 py-2 text-gray-700 hover:bg-[#c5e1a5]"
                 >
                   Merchandise
@@ -210,6 +213,12 @@ export const Nav = () => {
               </div>
             )}
           </div>
+          <a
+            href="/events"
+            className="block text-[#004d40] hover:text-gray-300"
+          >
+            Events
+          </a>
           <a
             href="/auth/login"
             className="block text-[#004d40] hover:text-gray-300"
