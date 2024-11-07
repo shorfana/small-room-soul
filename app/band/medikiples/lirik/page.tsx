@@ -16,10 +16,32 @@ const HomePage: React.FC = () => {
         "Kau telah berjanji untuk sehidup semati\nMaka tolong jangan ingkari\nKau dan aku telah terikat janji\n\nKau telah berjanji untuk tidak mengingkari\nMaka tolong jangan berlari\nKau dan aku telah terikat janji\n\nReff:\nAku percaya padamu, ku harap kau tahu itu\nMaka jangan sekalipun kau berfikir tuk ingkari karena\n\nKau telah berjanji untuk sehidup semati\nMaka tolong jangan ingkari\nKau dan aku telah terikat janji\n\nReff:\nSemua sumpah juga janjimu ku percaya semua itu\nTapi yang kau berikan\nKau ingkari semua itu\n\nReff:\nSemua sumpah juga janjimu ku percaya semua itu\nTapi yang kau berikan\nKau ingkari semua itu  ",
     },
     {
-      title: "judul 3",
-      lyrics:
-        "Karma adalah hukum alam yang tidak bisa kita hindari. Apa yang kita lakukan, baik atau buruk, akan kembali pada kita, cepat atau lambat. Aku tahu bahwa setiap tindakan punya konsekuensinya sendiri, tapi kadang aku tidak siap menghadapi apa yang datang. Hidup ini seperti roda yang terus berputar, kadang kita di atas, kadang kita di bawah. Ketika aku merasa aman, itulah saat karma datang, mengingatkan aku bahwa semua ini sementara. Setiap kebaikan yang kulakukan, setiap keburukan yang kuucapkan, semua itu tercatat dalam catatan karma. Dan sekarang, aku hanya bisa berharap bahwa apa yang aku lakukan di masa lalu, tidak akan terlalu berat untuk aku tanggung di masa depan. Tapi siapa yang bisa benar-benar siap? Karma datang tanpa peringatan, dan saat itu datang, kita hanya bisa menerima.",
-    },
+    title: "LAGI SENANG",
+    lyrics: 
+      "Lebah-lebah riang gembira menari\n" +
+      "Menghampiri Nektar bunga-bunga liar\n" +
+      "Sepasang Burung Berada diatas dahan\n" +
+      "Menata Tangkai-tangkai Membangun sangkar\n\n" +
+      "Ahhhhhhhh…\n" +
+      "Daun-daun Berjatuhan melayang menuju tanah\n" +
+      "Menjadi Teman-teman Para serangga\n" +
+      "Kupu-kupu Terbanglah dan hinggap disisiku\n\n" +
+      "Temani Senangku Ahhh..\n\n" +
+      "Reff :\n\n" +
+      "Ahhh… Lagi Senang\n" +
+      "Ahhh… Lagi Senang\n" +
+      "Rayakanlah hal sederhana yang kita punya\n\n" +
+      "Lagi Pula Hidup Kita yang tentukan arah\n" +
+      "Menjadi Iblis atau malaikat\n" +
+      "berilah arti karna kita pengembara\n" +
+      "didunia yang fana ahhh…\n\n" +
+      "Reff :\n\n" +
+      "Ahhh… Sungguh Senang\n" +
+      "Ahhh… Sungguh Senang\n" +
+      "Sebarkanlah segala cinta yang kita punya\n" +
+      "Lagi senang Sungguh senang\n" +
+      "Lagi senang Sungguh senang Slalu senang",
+  },
     {
       title: "judul 4",
       lyrics:
